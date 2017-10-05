@@ -82,7 +82,7 @@ def working():
             print('Price in BRL: %.2f' %sellerBTC2BRL)
             diffSeller2BR = (abs(btcBRLAverage - sellerBTC2BRL - totalFee)) / btcBRLAverage * 100
             print('>>> Possible profit: %.2f percent' %(diffSeller2BR))
-            if diffSeller2BR < 6:
+            if diffSeller2BR > 15: #You set here when send the allert. In my case if the profit > than 15%
                 SMS(offerID, diffSeller2BR)
 def contador():
     threading.Timer(20, contador).start()
