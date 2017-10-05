@@ -89,10 +89,3 @@ def contador():
     working()
 
 contador()
-))
-    print('SMS Sent')
-
-def working():
-    position = 0
-    for i in range(size):
-       
